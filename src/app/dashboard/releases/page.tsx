@@ -38,7 +38,7 @@ export default async function PressReleasesPage() {
                   <h2 className="text-lg font-semibold text-gray-900 mb-1">
                     {release.title}
                   </h2>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
                     {new Date(release.created_at).toLocaleDateString()}
                   </p>
                 </div>
@@ -69,7 +69,7 @@ export default async function PressReleasesPage() {
         </div>
       ) : (
         <div className="card text-center py-12">
-          <p className="text-gray-500 mb-4">No press releases yet.</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-4">No press releases yet.</p>
           <Link href="/dashboard/releases/new" className="btn-primary">
             Create Your First Press Release
           </Link>

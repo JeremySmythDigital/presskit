@@ -32,7 +32,7 @@ export default function Home() {
             <br />
             <span className="text-primary-600">for PR agencies</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             AI-powered press releases, curated journalist database, and automated pitch emails.
             Get the coverage your startup deserves.
           </p>
@@ -44,7 +44,7 @@ export default function Home() {
               View Pricing
             </Link>
           </div>
-          <p className="mt-4 text-sm text-gray-500">
+          <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
             No credit card required. Cancel anytime.
           </p>
         </div>
@@ -113,25 +113,25 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
             Simple, transparent pricing
           </h2>
-          <p className="text-center text-gray-600 mb-12">
+          <p className="text-center text-gray-700 dark:text-gray-300 mb-12">
             Start free, upgrade when you need more
           </p>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Free Plan */}
             <div className="card">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Free</h3>
-              <div className="text-4xl font-bold text-gray-900 mb-4">$0<span className="text-lg font-normal text-gray-500">/mo</span></div>
+              <div className="text-4xl font-bold text-gray-900 mb-4">$0<span className="text-lg font-normal text-gray-600 dark:text-gray-400">/mo</span></div>
               <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-2 text-gray-600">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                   <span className="text-green-500">✓</span> 3 press releases/month
                 </li>
-                <li className="flex items-center gap-2 text-gray-600">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                   <span className="text-green-500">✓</span> 100 journalist contacts
                 </li>
-                <li className="flex items-center gap-2 text-gray-600">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                   <span className="text-green-500">✓</span> 50 pitches/month
                 </li>
-                <li className="flex items-center gap-2 text-gray-600">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                   <span className="text-green-500">✓</span> Basic analytics
                 </li>
               </ul>
@@ -145,21 +145,21 @@ export default function Home() {
                 Most Popular
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Pro</h3>
-              <div className="text-4xl font-bold text-gray-900 mb-4">$49<span className="text-lg font-normal text-gray-500">/mo</span></div>
+              <div className="text-4xl font-bold text-gray-900 mb-4">$49<span className="text-lg font-normal text-gray-600 dark:text-gray-400">/mo</span></div>
               <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-2 text-gray-600">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                   <span className="text-green-500">✓</span> Unlimited press releases
                 </li>
-                <li className="flex items-center gap-2 text-gray-600">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                   <span className="text-green-500">✓</span> 10,000+ journalist contacts
                 </li>
-                <li className="flex items-center gap-2 text-gray-600">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                   <span className="text-green-500">✓</span> Unlimited pitches
                 </li>
-                <li className="flex items-center gap-2 text-gray-600">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                   <span className="text-green-500">✓</span> Advanced analytics
                 </li>
-                <li className="flex items-center gap-2 text-gray-600">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                   <span className="text-green-500">✓</span> Priority support
                 </li>
               </ul>
@@ -177,7 +177,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Ready to get featured?
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
             Join 500+ founders getting press coverage without the agency fees.
           </p>
           <Link href="/dashboard" className="btn-primary text-lg">
@@ -187,7 +187,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-gray-900 text-gray-400">
+      <footer className="py-12 bg-gray-900 text-gray-500 dark:text-gray-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="text-xl font-bold text-white">
@@ -213,7 +213,7 @@ function FeatureCard({ icon, title, description }: { icon: React.ReactNode; titl
     <div className="card hover:shadow-xl transition-shadow">
       <div className="mb-4">{icon}</div>
       <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <p className="text-gray-700 dark:text-gray-300">{description}</p>
     </div>
   );
 }
@@ -221,9 +221,9 @@ function FeatureCard({ icon, title, description }: { icon: React.ReactNode; titl
 function TestimonialCard({ quote, author, role }: { quote: string; author: string; role: string }) {
   return (
     <div className="card">
-      <p className="text-gray-600 mb-4">"{quote}"</p>
+      <p className="text-gray-700 dark:text-gray-300 mb-4">"{quote}"</p>
       <div className="font-semibold text-gray-900">{author}</div>
-      <div className="text-sm text-gray-500">{role}</div>
+      <div className="text-sm text-gray-600 dark:text-gray-400">{role}</div>
     </div>
   );
 }

@@ -34,7 +34,7 @@ export default async function DashboardLayout({
           </NavLink>
         </nav>
         <div className="absolute bottom-4 left-4 right-4">
-          <div className="text-sm text-gray-600">
+          <div className="text-sm text-gray-700 dark:text-gray-300">
             {user.email}
           </div>
           <form action="/api/auth/logout" method="POST">

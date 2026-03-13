@@ -48,19 +48,19 @@ export default async function PitchesPage() {
       {/* Stats */}
       <div className="grid md:grid-cols-4 gap-4 mb-8">
         <div className="card">
-          <div className="text-sm text-gray-500">Total Sent</div>
+          <div className="text-sm text-gray-600 dark:text-gray-400">Total Sent</div>
           <div className="text-2xl font-bold text-gray-900">{totalSent}</div>
         </div>
         <div className="card">
-          <div className="text-sm text-gray-500">Opened</div>
+          <div className="text-sm text-gray-600 dark:text-gray-400">Opened</div>
           <div className="text-2xl font-bold text-green-600">{opened}</div>
         </div>
         <div className="card">
-          <div className="text-sm text-gray-500">Open Rate</div>
+          <div className="text-sm text-gray-600 dark:text-gray-400">Open Rate</div>
           <div className="text-2xl font-bold text-primary-600">{openRate}</div>
         </div>
         <div className="card">
-          <div className="text-sm text-gray-500">Responses</div>
+          <div className="text-sm text-gray-600 dark:text-gray-400">Responses</div>
           <div className="text-2xl font-bold text-yellow-600">{responded}</div>
         </div>
       </div>
@@ -75,7 +75,7 @@ export default async function PitchesPage() {
                   <h2 className="text-lg font-semibold text-gray-900 mb-1">
                     {pitch.subject}
                   </h2>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
                     to {pitch.journalists?.name} ({pitch.journalists?.outlet})
                   </p>
                   <p className="text-sm text-gray-500 mt-1">
@@ -101,7 +101,7 @@ export default async function PitchesPage() {
         </div>
       ) : (
         <div className="card text-center py-12">
-          <p className="text-gray-500 mb-4">No pitches yet.</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-4">No pitches yet.</p>
           <Link href="/dashboard/pitches/new" className="btn-primary">
             Send Your First Pitch
           </Link>

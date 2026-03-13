@@ -114,7 +114,7 @@ export default function JournalistsPage() {
       {/* Results */}
       {loading ? (
         <div className="text-center py-12">
-          <div className="text-gray-500">Loading journalists...</div>
+          <div className="text-gray-600 dark:text-gray-400">Loading journalists...</div>
         </div>
       ) : (
         <div className="space-y-3">
@@ -123,7 +123,7 @@ export default function JournalistsPage() {
               <div className="flex justify-between items-start">
                 <div>
                   <h2 className="text-lg font-semibold text-gray-900">{journalist.name}</h2>
-                  <p className="text-gray-600">{journalist.outlet}</p>
+                  <p className="text-gray-700 dark:text-gray-300">{journalist.outlet}</p>
                   <div className="flex gap-2 mt-2">
                     <span className="px-2 py-1 bg-primary-100 text-primary-700 text-sm rounded-full">
                       {journalist.beat}

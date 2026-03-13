@@ -88,7 +88,7 @@ export default function NewPitchPage() {
             <h2 className="text-lg font-semibold text-gray-900 mb-4">
               2. Select Journalists
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
               Select journalists from the database to send personalized pitches.
             </p>
             <a

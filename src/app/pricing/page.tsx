@@ -26,7 +26,7 @@ export default function PricingPage() {
           <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
             Simple, transparent pricing
           </h1>
-          <p className="text-xl text-center text-gray-600 mb-12">
+          <p className="text-xl text-center text-gray-700 dark:text-gray-300 mb-12">
             Start free. Upgrade when you need more.
           </p>
 
@@ -35,9 +35,9 @@ export default function PricingPage() {
             <div className="card p-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-2">Free</h2>
               <div className="text-5xl font-bold text-gray-900 mb-4">
-                $0<span className="text-lg font-normal text-gray-500">/mo</span>
+                $0<span className="text-lg font-normal text-gray-600 dark:text-gray-400">/mo</span>
               </div>
-              <p className="text-gray-600 mb-6">Perfect for getting started with PR</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">Perfect for getting started with PR</p>
               
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
@@ -74,9 +74,9 @@ export default function PricingPage() {
               </div>
               <h2 className="text-2xl font-semibold text-gray-900 mb-2">Pro</h2>
               <div className="text-5xl font-bold text-gray-900 mb-4">
-                $49<span className="text-lg font-normal text-gray-500">/mo</span>
+                $49<span className="text-lg font-normal text-gray-600 dark:text-gray-400">/mo</span>
               </div>
-              <p className="text-gray-600 mb-6">For serious founders who want results</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">For serious founders who want results</p>
               
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
@@ -153,7 +153,7 @@ export default function PricingPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Ready to get featured?
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-700 dark:text-gray-300 mb-6">
               Join 500+ founders getting press coverage without the agency fees.
             </p>
             <Link href="/login" className="btn-primary text-lg">
@@ -170,7 +170,7 @@ function FAQ({ question, answer }: { question: string; answer: string }) {
   return (
     <div>
       <h3 className="text-lg font-semibold text-gray-900 mb-2">{question}</h3>
-      <p className="text-gray-600">{answer}</p>
+      <p className="text-gray-700 dark:text-gray-300">{answer}</p>
     </div>
   );
 }

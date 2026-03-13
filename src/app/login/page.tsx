@@ -47,7 +47,7 @@ export default function LoginPage() {
           <Link href="/" className="text-3xl font-bold text-gray-900">
             Press<span className="text-primary-600">Kit</span>.ai
           </Link>
-          <p className="mt-2 text-gray-600">
+          <p className="mt-2 text-gray-700 dark:text-gray-300">
             {isSignUp ? "Create your account" : "Welcome back"}
           </p>
         </div>
@@ -113,7 +113,7 @@ export default function LoginPage() {
           </div>
         </div>
 
-        <p className="mt-4 text-center text-sm text-gray-500">
+        <p className="mt-4 text-center text-sm text-gray-600 dark:text-gray-400">
           By continuing, you agree to our{" "}
           <Link href="/terms" className="text-primary-600 hover:text-primary-700">
             Terms of Service

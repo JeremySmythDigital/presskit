@@ -91,7 +91,7 @@ export default async function DashboardPage() {
               <div key={pitch.id} className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                 <div>
                   <div className="font-medium text-gray-900">{pitch.subject}</div>
-                  <div className="text-sm text-gray-500">
+                  <div className="text-sm text-gray-600 dark:text-gray-400">
                     to {pitch.journalists?.name} ({pitch.journalists?.outlet})
                   </div>
                 </div>
@@ -106,7 +106,7 @@ export default async function DashboardPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-8 text-gray-500">
+          <div className="text-center py-8 text-gray-600 dark:text-gray-400">
             No pitches yet. Create your first pitch!
           </div>
         )}
@@ -120,7 +120,7 @@ function StatCard({ icon, label, value }: { icon: React.ReactNode; label: string
     <div className="card">
       <div className="flex items-center gap-3 mb-2">
         {icon}
-        <span className="text-sm text-gray-500">{label}</span>
+        <span className="text-sm text-gray-600 dark:text-gray-400">{label}</span>
       </div>
       <div className="text-2xl font-bold text-gray-900">{value}</div>
     </div>
