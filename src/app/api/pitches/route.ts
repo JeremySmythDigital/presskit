@@ -2,7 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { getServerClient } from "@/lib/supabase";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const getResend = () => {
+  if (!process.env.RESEND_API_KEY) {
+    return null;
+  }
+  return new Resend(process.env.RESEND_API_KEY);
+};
 
 export async function GET(req: NextRequest) {
   try {
@@ -63,6 +68,10 @@ export async function POST(req: NextRequest) {
     
     for (const journalist of journalistList || []) {
       try {
+        const resend = getResend();
+        if (!resend) {
+          throw new Error("RESEND_API_KEY not configured");
+        }
         await resend.emails.send({
           from: "press@presskit.ai",
           to: journalist.email,
