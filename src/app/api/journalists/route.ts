@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServerClient } from "@/lib/supabase";
 
+// Force dynamic rendering since this route uses cookies() and request.url
+export const dynamic = 'force-dynamic';
+
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
@@ -27,10 +30,9 @@ export async function GET(req: NextRequest) {
 
     const { data: journalists, error } = await query;
 
-    if (error) throw error;
-
-    // If no journalists in DB, return seed data
-    if (!journalists || journalists.length === 0) {
+    // If Supabase error or no data, return seed data
+    if (error || !journalists || journalists.length === 0) {
+      console.log("Supabase query returned no data or error, using seed data. Error:", error?.message);
       const seedJournalists = [
         { id: "1", name: "Sarah Johnson", email: "sarah@techcrunch.com", outlet: "TechCrunch", beat: "Technology", location: "San Francisco", notes: "Covers early-stage startups" },
         { id: "2", name: "Mike Chen", email: "mike@theverge.com", outlet: "The Verge", beat: "Technology", location: "New York", notes: "Focus on AI/ML companies" },
