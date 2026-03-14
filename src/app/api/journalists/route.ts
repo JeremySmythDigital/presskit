@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { getServerClient } from "@/lib/supabase";
 
 export async function GET(req: NextRequest) {
   try {
@@ -9,6 +9,7 @@ export async function GET(req: NextRequest) {
     const outlet = searchParams.get("outlet");
     const limit = parseInt(searchParams.get("limit") || "50");
 
+    const supabase = getServerClient();
     let query = supabase
       .from("journalists")
       .select("*")
