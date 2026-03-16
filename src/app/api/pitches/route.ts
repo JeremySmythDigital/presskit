@@ -73,7 +73,7 @@ export async function POST(req: NextRequest) {
           throw new Error("RESEND_API_KEY not configured");
         }
         await resend.emails.send({
-          from: "press@presskit.ai",
+          from: "press@ravenops.ai",
           to: journalist.email,
           subject,
           html: emailBody.replace(/\n/g, "<br>"),

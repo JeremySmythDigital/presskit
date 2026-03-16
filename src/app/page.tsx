@@ -32,7 +32,7 @@ export default function Home() {
             <br />
             <span className="text-primary-600">for PR agencies</span>
           </h1>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-700 dark:text-gray-200 mb-8 max-w-2xl mx-auto">
             AI-powered press releases, curated journalist database, and automated pitch emails.
             Get the coverage your startup deserves.
           </p>
@@ -44,7 +44,7 @@ export default function Home() {
               View Pricing
             </Link>
           </div>
-          <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+          <p className="mt-4 text-sm text-gray-600 dark:text-gray-200">
             No credit card required. Cancel anytime.
           </p>
         </div>

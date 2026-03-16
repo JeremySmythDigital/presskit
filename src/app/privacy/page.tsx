@@ -9,7 +9,7 @@ export default function PrivacyPage() {
         <h2 className="text-xl font-semibold mt-8 mb-4">2. Data Security</h2>
         <p className="mb-4">Your data is stored securely with industry-standard encryption.</p>
         <h2 className="text-xl font-semibold mt-8 mb-4">3. Contact</h2>
-        <p className="mb-4">For privacy questions, contact us at privacy@presskit.ai</p>
+        <p className="mb-4">For privacy questions, contact us at privacy@ravenops.ai</p>
       </div>
     </div>
   )

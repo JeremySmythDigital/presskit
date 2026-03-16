@@ -11,7 +11,7 @@ export default function TermsPage() {
         <h2 className="text-xl font-semibold mt-8 mb-4">3. Use License</h2>
         <p className="mb-4">Permission is granted to use PressKit for PR and marketing purposes.</p>
         <h2 className="text-xl font-semibold mt-8 mb-4">4. Contact</h2>
-        <p className="mb-4">For questions, contact us at support@presskit.ai</p>
+        <p className="mb-4">For questions, contact us at support@ravenops.ai</p>
       </div>
     </div>
   )
