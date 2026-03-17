@@ -3,36 +3,56 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 248, 250, 252;
-  --background-end-rgb: 255, 255, 255;
+  --background: #FAFAF8;
+  --foreground: #121212;
+  --muted: #6b7280;
+  --accent: #f59e0b;
+  --accent-light: #fbbf24;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgb(var(--background-end-rgb))
-  )
-  rgb(var(--background-start-rgb));
+  color: var(--foreground);
+  background: var(--background);
   font-feature-settings: "rlig" 1, "calt" 1;
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 transition-all shadow-sm hover:shadow-md;
+    @apply bg-amber-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-600 transition-all shadow-sm hover:shadow-md;
   }
   
   .btn-secondary {
-    @apply bg-white text-gray-900 px-6 py-3 rounded-lg font-medium border border-gray-200 hover:bg-gray-50 transition-all;
+    @apply bg-white text-[#121212] px-6 py-3 rounded-lg font-medium border border-amber-200 hover:bg-amber-50 transition-all;
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-lg border border-gray-100 p-6;
+    @apply bg-white rounded-xl shadow-lg border border-amber-100 p-6;
   }
   
   .input {
-    @apply w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+    @apply w-full px-4 py-3 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent;
+  }
+}
+
+/* Bento grid utility */
+.bento-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bento-card-large {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .bento-card-large {
+    grid-column: span 1;
   }
 }
