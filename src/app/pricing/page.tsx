@@ -148,6 +148,20 @@ export default function PricingPage() {
             </div>
           </div>
 
+          {/* Lifetime Deal Banner */}
+          <div className="mt-12 mb-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-8 text-white text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-sm font-medium mb-4">
+              <span className="animate-pulse">🔥</span> Limited Time Offer
+            </div>
+            <h2 className="text-3xl font-bold mb-2">Lifetime Deal: $299</h2>
+            <p className="text-lg text-white/90 mb-4">
+              One-time payment. Forever access. Only 50 spots.
+            </p>
+            <Link href="/lifetime" className="inline-flex items-center gap-2 bg-white text-amber-600 px-6 py-3 rounded-lg font-semibold hover:bg-amber-50 transition-all">
+              Claim Your Spot →
+            </Link>
+          </div>
+
           {/* CTA */}
           <div className="mt-20 text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">

@@ -44,15 +44,15 @@ export default function Home() {
               Get the coverage your startup deserves.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/dashboard" className="btn-primary text-lg text-center">
-                Start Free Trial →
+              <Link href="/lifetime" className="btn-primary text-lg text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600">
+                🔥 Get Lifetime Deal ($299) →
               </Link>
-              <Link href="#features" className="btn-secondary text-lg text-center">
-                See How It Works
+              <Link href="/dashboard" className="btn-secondary text-lg text-center">
+                Start Free Trial
               </Link>
             </div>
             <p className="mt-4 text-sm text-[#121212]/50">
-              No credit card required. Cancel anytime.
+              <span className="text-amber-600 font-medium">⚡ Limited: 50 spots at $299 (save $588/year)</span> · No credit card required
             </p>
           </div>
           
